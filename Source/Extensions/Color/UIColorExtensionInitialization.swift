@@ -11,6 +11,10 @@ import UIKit
 
 public extension UIColor {
     
+    internal convenience init(rgbaInformation: RGBAInformation) {
+        self.init(red: rgbaInformation.red.CGFloatValue, green: rgbaInformation.green.CGFloatValue, blue: rgbaInformation.blue.CGFloatValue, alpha: rgbaInformation.alpha.CGFloatValue)
+    }
+    
     public convenience init?(hexString: String) {
         let rgbaInformation = RGBAStringParser.parseHexString(hexString)
         
@@ -18,7 +22,7 @@ public extension UIColor {
             return nil
         }
         
-        self.init(red: rgbaInformation!.red.CGFloatValue, green: rgbaInformation!.green.CGFloatValue, blue: rgbaInformation!.blue.CGFloatValue, alpha: rgbaInformation!.alpha.CGFloatValue)
+        self.init(rgbaInformation: rgbaInformation!)
     }
     
 }
