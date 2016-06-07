@@ -18,6 +18,12 @@
 		6925AA651D0695E8002F57F2 /* UIColorExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AA611D0695E8002F57F2 /* UIColorExtensionInitialization.swift */; };
 		6925AA681D069625002F57F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AA661D069625002F57F2 /* MainViewController.swift */; };
 		6925AA691D069625002F57F2 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6925AA671D069625002F57F2 /* MainViewController.xib */; };
+		6925AABF1D0707DC002F57F2 /* BrandColorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AABC1D0707DC002F57F2 /* BrandColorCollection.swift */; };
+		6925AAC01D0707DC002F57F2 /* FacebookColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AABE1D0707DC002F57F2 /* FacebookColors.swift */; };
+		6925AAC21D070961002F57F2 /* GoogleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AAC11D070961002F57F2 /* GoogleColors.swift */; };
+		6925AAC41D0709EE002F57F2 /* FlickrColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AAC31D0709EE002F57F2 /* FlickrColors.swift */; };
+		6925AAC61D070B71002F57F2 /* SkypeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AAC51D070B71002F57F2 /* SkypeColors.swift */; };
+		6925AAC81D070B8B002F57F2 /* SlackColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AAC71D070B8B002F57F2 /* SlackColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		6925AA611D0695E8002F57F2 /* UIColorExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionInitialization.swift; sourceTree = "<group>"; };
 		6925AA661D069625002F57F2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6925AA671D069625002F57F2 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		6925AABC1D0707DC002F57F2 /* BrandColorCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandColorCollection.swift; sourceTree = "<group>"; };
+		6925AABE1D0707DC002F57F2 /* FacebookColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookColors.swift; sourceTree = "<group>"; };
+		6925AAC11D070961002F57F2 /* GoogleColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleColors.swift; sourceTree = "<group>"; };
+		6925AAC31D0709EE002F57F2 /* FlickrColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrColors.swift; sourceTree = "<group>"; };
+		6925AAC51D070B71002F57F2 /* SkypeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkypeColors.swift; sourceTree = "<group>"; };
+		6925AAC71D070B8B002F57F2 /* SlackColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +183,7 @@
 			children = (
 				6925AA5B1D0695E8002F57F2 /* Classes */,
 				6925AA5F1D0695E8002F57F2 /* Extensions */,
+				6925AABA1D0707DC002F57F2 /* BrandColorCollection */,
 			);
 			name = RainbowColors;
 			path = ../../../../Source;
@@ -200,6 +213,35 @@
 				6925AA611D0695E8002F57F2 /* UIColorExtensionInitialization.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		6925AABA1D0707DC002F57F2 /* BrandColorCollection */ = {
+			isa = PBXGroup;
+			children = (
+				6925AABB1D0707DC002F57F2 /* Base */,
+				6925AABD1D0707DC002F57F2 /* Brands */,
+			);
+			path = BrandColorCollection;
+			sourceTree = "<group>";
+		};
+		6925AABB1D0707DC002F57F2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6925AABC1D0707DC002F57F2 /* BrandColorCollection.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6925AABD1D0707DC002F57F2 /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+				6925AABE1D0707DC002F57F2 /* FacebookColors.swift */,
+				6925AAC11D070961002F57F2 /* GoogleColors.swift */,
+				6925AAC31D0709EE002F57F2 /* FlickrColors.swift */,
+				6925AAC51D070B71002F57F2 /* SkypeColors.swift */,
+				6925AAC71D070B8B002F57F2 /* SlackColors.swift */,
+			);
+			path = Brands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,9 +378,15 @@
 				6925AA291D06958F002F57F2 /* AppDelegate.swift in Sources */,
 				6925AA641D0695E8002F57F2 /* RGBAStringParser.swift in Sources */,
 				6925AA631D0695E8002F57F2 /* RGBAInformation.swift in Sources */,
+				6925AAC01D0707DC002F57F2 /* FacebookColors.swift in Sources */,
+				6925AAC41D0709EE002F57F2 /* FlickrColors.swift in Sources */,
 				6925AA681D069625002F57F2 /* MainViewController.swift in Sources */,
 				6925AA651D0695E8002F57F2 /* UIColorExtensionInitialization.swift in Sources */,
+				6925AABF1D0707DC002F57F2 /* BrandColorCollection.swift in Sources */,
+				6925AAC81D070B8B002F57F2 /* SlackColors.swift in Sources */,
+				6925AAC21D070961002F57F2 /* GoogleColors.swift in Sources */,
 				6925AA621D0695E8002F57F2 /* RGBAComponent.swift in Sources */,
+				6925AAC61D070B71002F57F2 /* SkypeColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +603,7 @@
 				6925AA4F1D069590002F57F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6925AA501D069590002F57F2 /* Build configuration list for PBXNativeTarget "RainbowColorsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +612,7 @@
 				6925AA521D069590002F57F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6925AA531D069590002F57F2 /* Build configuration list for PBXNativeTarget "RainbowColorsDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +621,7 @@
 				6925AA551D069590002F57F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
