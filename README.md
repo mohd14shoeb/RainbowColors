@@ -1,5 +1,5 @@
 <p align="center" >
-<img src="https://github.com/igormatyushkin014/RainbowColors/blob/master/Logo/logo-1024-300.png" alt="RainbowColors" title="RainbowColors">
+<img src="https://github.com/igormatyushkin014/RainbowColors/blob/master/Images/logo-1024-300.png" alt="RainbowColors" title="RainbowColors">
 </p>
 
 # At a Glance
@@ -20,6 +20,8 @@ or
 * Xcode 7 and later
 
 ## Usage
+
+### Color Initialization
 
 The common expression for color in RGB system is `#123456`. Another variety of this expression looks like `#123` which is equivalent to `#112233`. The same time, iOS SDK doesn't support those expressions above and requires to use `CGFloat` values for red, green, blue and alpha component in constructor of `UIColor` class. Not comfortable enough, right?
 
@@ -58,6 +60,26 @@ let almostTransparentGrayColor = UIColor(hexString: "#33333310") // {51, 51, 51,
 ```
 
 If hex string has wrong format, nil will be returned instead of color.
+
+### Brand Colors
+
+Sometimes you don't know which colors are good enough for your project. Then you can try color schemes of well-known services just to bring some color to app. `RainbowColors` has extendable collection of brand colors. All that you need is to write
+
+```swift
+let color = UIColor.Brands.Google.blue
+```
+
+or 
+
+```Flickr
+let color = UIColor.Brands.Flickr.pink
+```
+
+To see full set of available brands, just type in Xcode `UIColor.Brands.`:
+
+<p align="center" >
+<img src="https://github.com/igormatyushkin014/RainbowColors/blob/master/Images/available-brands.png" alt="Available Brands" title="Available Brands">
+</p>
 
 ## License
 
