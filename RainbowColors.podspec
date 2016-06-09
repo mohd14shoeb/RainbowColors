@@ -29,7 +29,7 @@ This library simplifies work with colors in Swift.
                    DESC
 
   s.homepage     = "https://github.com/igormatyushkin014/RainbowColors"
-  s.screenshots  = "https://github.com/igormatyushkin014/RainbowColors/blob/master/Images/logo-1024-300.png"
+  s.screenshots  = "https://github.com/igormatyushkin014/RainbowColors/raw/master/Images/logo-1024-300.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
