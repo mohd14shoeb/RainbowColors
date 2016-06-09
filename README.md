@@ -1,5 +1,5 @@
 <p align="center" >
-<img src="Images/logo-1024-300.png" alt="RainbowColors" title="RainbowColors">
+<img src="https://github.com/igormatyushkin014/RainbowColors/blob/master/Images/logo-1024-300.png" alt="RainbowColors" title="RainbowColors">
 </p>
 
 # At a Glance
@@ -78,7 +78,7 @@ let color = UIColor.Brands.Flickr.pink
 To see full collection of available brands, just type in Xcode `UIColor.Brands.` and you will see output like this:
 
 <p align="center" >
-<img src="Images/available-brands.png" alt="Available Brands" title="Available Brands">
+<img src="https://github.com/igormatyushkin014/RainbowColors/blob/master/Images/available-brands.png" alt="Available Brands" title="Available Brands">
 </p>
 
 Another way to check available brands is to take a look at [`BrandColorCollection.swift`](Source/BrandColorCollection/Base/BrandColorCollection.swift) file.
