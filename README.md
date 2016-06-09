@@ -83,6 +83,10 @@ To see full collection of available brands, just type in Xcode `UIColor.Brands.`
 
 Another way to check available brands is to take a look at [`BrandColorCollection.swift`](Source/BrandColorCollection/Base/BrandColorCollection.swift) file.
 
+## Contribution
+
+If you want to add more brand colors to this library, send a pull request. This kind of changes is highly appreciated. Let's make the largest open-source collection of brand colors for developers :)
+
 ## License
 
 `RainbowColors` is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
