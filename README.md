@@ -71,8 +71,14 @@ let color = UIColor.Brands.Google.blue
 
 or 
 
-```Flickr
+```swift
 let color = UIColor.Brands.Flickr.pink
+```
+
+Of course, you are not limited to make any operations with those colors:
+
+```swift
+let flickrPinkWithHalfTransparency = UIColor.Brands.Flickr.pink.colorWithAlphaComponent(0.5)
 ```
 
 To see full collection of available brands, just type in Xcode `UIColor.Brands.` and you will see output like this:
