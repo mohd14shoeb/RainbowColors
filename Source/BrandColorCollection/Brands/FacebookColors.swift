@@ -1,6 +1,6 @@
 //
 //  FacebookColors.swift
-//  RainbowColorsDemo
+//  RainbowColors
 //
 //  Created by Igor Matyushkin on 07.06.16.
 //  Copyright © 2016 Igor Matyushkin. All rights reserved.
