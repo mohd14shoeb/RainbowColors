@@ -25,11 +25,5 @@ public extension UIColor {
         self.init(rgbaInformation: rgbaInformation!)
     }
     
-    public class var Brands: BrandColorCollection {
-        get {
-            return BrandColorCollection()
-        }
-    }
-    
 }
 

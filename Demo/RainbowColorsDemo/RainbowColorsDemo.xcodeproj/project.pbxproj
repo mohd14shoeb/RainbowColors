@@ -24,6 +24,7 @@
 		6925AAC41D0709EE002F57F2 /* FlickrColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AAC31D0709EE002F57F2 /* FlickrColors.swift */; };
 		6925AAC61D070B71002F57F2 /* SkypeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AAC51D070B71002F57F2 /* SkypeColors.swift */; };
 		6925AAC81D070B8B002F57F2 /* SlackColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6925AAC71D070B8B002F57F2 /* SlackColors.swift */; };
+		69B5C5181D0EBDF100996433 /* UIColorExtensionBrands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5C5171D0EBDF100996433 /* UIColorExtensionBrands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		6925AAC31D0709EE002F57F2 /* FlickrColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrColors.swift; sourceTree = "<group>"; };
 		6925AAC51D070B71002F57F2 /* SkypeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkypeColors.swift; sourceTree = "<group>"; };
 		6925AAC71D070B8B002F57F2 /* SlackColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackColors.swift; sourceTree = "<group>"; };
+		69B5C5171D0EBDF100996433 /* UIColorExtensionBrands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionBrands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				6925AA611D0695E8002F57F2 /* UIColorExtensionInitialization.swift */,
+				69B5C5171D0EBDF100996433 /* UIColorExtensionBrands.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B5C5181D0EBDF100996433 /* UIColorExtensionBrands.swift in Sources */,
 				6925AA291D06958F002F57F2 /* AppDelegate.swift in Sources */,
 				6925AA641D0695E8002F57F2 /* RGBAStringParser.swift in Sources */,
 				6925AA631D0695E8002F57F2 /* RGBAInformation.swift in Sources */,
