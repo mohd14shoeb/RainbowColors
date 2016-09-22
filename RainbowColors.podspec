@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RainbowColors"
-  s.version      = "1.2"
+  s.version      = "3.0"
   s.summary      = "Colorful programming."
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ This library simplifies work with colors in Swift.
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
