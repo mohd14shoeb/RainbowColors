@@ -2,13 +2,20 @@
 <img src="https://github.com/igormatyushkin014/RainbowColors/blob/master/Images/logo-1024-300.png" alt="RainbowColors" title="RainbowColors">
 </p>
 
+<p align="center">
+<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/RainbowColors.svg?maxAge=2592000"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/dt/RainbowColors.svg?maxAge=2592000"></a>
+<a href="https://tldrlegal.com/license/mit-license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"></a>
+</p>
+
 # At a Glance
 
 `RainbowColors` simplifies common tasks with colors in iOS, which makes easier implementation of colorful UI designs. Absolutely compatible with native iOS SDK.
 
 ##How To Get Started
 
-- Copy content of `Source` folder to your project.
+- Copy content of `RainbowColors` folder to your project.
 
 or
 
@@ -18,6 +25,8 @@ or
 
 * iOS 8 and later
 * Xcode 7 and later
+
+**Note**: For Swift 2.x use `RainbowColors v1.2`. For Swift 3.0 use `RainbowColors v3.0`.
 
 ## Usage
 
