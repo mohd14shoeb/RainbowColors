@@ -15,7 +15,7 @@ internal class RGBAStringParser: NSObject {
     
     // MARK: Public class methods
     
-    internal class func parseHexString(hexString: String) -> RGBAInformation? {
+    internal class func parse(hexString: String) -> RGBAInformation? {
         // Check that hex string is not empty
         
         guard !hexString.isEmpty else {
@@ -26,7 +26,7 @@ internal class RGBAStringParser: NSObject {
         // Obtain hex code string without sharp symbol
         
         let firstSymbolIsSharp = hexString.hasPrefix("#")
-        let hexCodeString = firstSymbolIsSharp ? (hexString as NSString).substringFromIndex(1) : hexString
+        let hexCodeString = firstSymbolIsSharp ? (hexString as NSString).substring(from: 1) : hexString
         
         
         // Create collection of RGBA component integer values
@@ -41,11 +41,11 @@ internal class RGBAStringParser: NSObject {
         
         // Parse hex code string
         
-        let updateRGBAComponentIntegerValue: (componentIndex: Int, componentValueHexString: String) -> Void = {(componentIndex, componentValueHexString) in
+        let updateRGBAComponentIntegerValue: (_ componentIndex: Int, _ componentValueHexString: String) -> Void = {(componentIndex, componentValueHexString) in
             var rgbaComponentIntegerValue = UInt32(RGBAComponent.maximumIntegerValue())
             
-            let scanner = NSScanner(string: componentValueHexString)
-            scanner.scanHexInt(&rgbaComponentIntegerValue)
+            let scanner = Scanner(string: componentValueHexString)
+            scanner.scanHexInt32(&rgbaComponentIntegerValue)
             
             rgbaComponentIntegerValues[componentIndex] = RGBAComponent(integerValue: Int(rgbaComponentIntegerValue))
         }
@@ -56,17 +56,17 @@ internal class RGBAStringParser: NSObject {
         case 3, 4:
             for i in 0..<lengthOfHexCodeString {
                 let rangeForHexCodeSubstring = NSMakeRange(i, 1)
-                let hexCodeSubstring = (hexCodeString as NSString).substringWithRange(rangeForHexCodeSubstring)
+                let hexCodeSubstring = (hexCodeString as NSString).substring(with: rangeForHexCodeSubstring)
                 let rgbaComponentString = String(format: "0x%@%@", hexCodeSubstring, hexCodeSubstring)
-                updateRGBAComponentIntegerValue(componentIndex: i, componentValueHexString: rgbaComponentString)
+                updateRGBAComponentIntegerValue(i, rgbaComponentString)
             }
             break
         case 6, 8:
-            for i in 0.stride(to: lengthOfHexCodeString, by: 2) {
+            for i in stride(from: 0, to: lengthOfHexCodeString, by: 2) {
                 let rangeForHexCodeSubstring = NSMakeRange(i, 2)
-                let hexCodeSubstring = (hexCodeString as NSString).substringWithRange(rangeForHexCodeSubstring)
+                let hexCodeSubstring = (hexCodeString as NSString).substring(with: rangeForHexCodeSubstring)
                 let rgbaComponentString = String(format: "0x%@", hexCodeSubstring)
-                updateRGBAComponentIntegerValue(componentIndex: i / 2, componentValueHexString: rgbaComponentString)
+                updateRGBAComponentIntegerValue(i / 2, rgbaComponentString)
             }
             break
         default:

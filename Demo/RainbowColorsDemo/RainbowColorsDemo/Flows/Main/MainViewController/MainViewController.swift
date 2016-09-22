@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     
     // MARK: Outlets
     
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet fileprivate weak var titleLabel: UILabel!
     
     
     // MARK: Object variables & properties

@@ -16,7 +16,7 @@ public extension UIColor {
     }
     
     public convenience init?(hexString: String) {
-        let rgbaInformation = RGBAStringParser.parseHexString(hexString)
+        let rgbaInformation = RGBAStringParser.parse(hexString: hexString)
         
         guard rgbaInformation != nil else {
             return nil
